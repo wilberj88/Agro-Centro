@@ -317,7 +317,7 @@ if a:
     initial_view_state=pdk.ViewState(
         latitude=6.911601,
         longitude=-73.7169864,
-        zoom=5,
+        zoom=8,
         pitch=50,
     ),
     layers=[
@@ -326,7 +326,7 @@ if a:
            data=df,
            get_position='[lon, lat]',
            radius=200,
-           elevation_scale=4,
+           elevation_scale=50,
            elevation_range=[0, 1000],
            pickable=True,
            extruded=True,
