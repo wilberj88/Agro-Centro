@@ -31,8 +31,8 @@ col1, col2 = st.columns(2)
 with col1:
     cultivo = st.radio(
     "¿Cuál es tu proyecto productivo?",
-    ["***Peces***", "***Cacao***", "***Pollos***", "***Cítricos***", "***Bovinos***"],
-    captions = ["Alevinos", "CNCH-13", "Ponedoras", "Limón Tahití", "Leche y carne"])
+    ["***Mango***", "***Peces***", "***Cacao***", "***Pollos***", "***Cítricos***", "***Bovinos***"],
+    captions = ["Cuero Vegetal", "CNCH-13", "Ponedoras", "Limón Tahití", "Leche y carne"])
 
 with col2:
     area = st.slider('Cuántas hectáreas cultivadas?', 0, 100, 5)    
