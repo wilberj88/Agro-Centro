@@ -52,9 +52,9 @@ with coly:
     a=  st.button("Calcular Diagnóstico", type="primary")
 
 if a:
-    st.header("Diagnóstico")
+    st.header("Diagnóstico x Hectárea")
     col1, col2, col3, col4 = st.columns(4)
-    col1.metric("Costo", "15M €", "40%")
+    col1.metric("Costo", "15M COP", "40%")
     col2.metric("Rentabilidad", "30%", "-82%")
     col3.metric("Financiación", "16%", "43%")
     col4.metric("Inflación", "7%", "78%")
@@ -310,14 +310,14 @@ if a:
     st.write("Georreferenciación de riesgos climáticos")
     #datos
     df = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [-4.0226300, 39.8581000],
+    np.random.randn(1000, 2) / [50, 50] + [6.911601, -73.7169864],
     columns=['lat', 'lon'])
     st.pydeck_chart(pdk.Deck(
     map_style=None,
     initial_view_state=pdk.ViewState(
-        latitude=-4.0226300,
-        longitude=39.8581000,
-        zoom=2,
+        latitude=6.911601,
+        longitude=-73.7169864,
+        zoom=5,
         pitch=50,
     ),
     layers=[
@@ -353,9 +353,7 @@ if a:
     np.random.randn(50, 5),
     columns=["Clima", "Riego", "Cámaras", "Sensores", "Jardinería"])
     st.bar_chart(chart_data)
-    colx, coly, colz = st.columns(3)
-    with coly:
-        b=  st.button("Suscríbete GRATIS", type="primary")
+
     
     st.title("Kit Operacional 📦")
     col1, col2, col3, col4 = st.columns(4)
