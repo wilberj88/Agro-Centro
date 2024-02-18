@@ -22,8 +22,8 @@ st.set_page_config(
 
 colx, coly, colz = st.columns(3)
 with coly:
-    st.title("🌽 Agro Centro 👨‍🌾")
-    st.writer("Granjas Integrales Autosuficientes")  
+    st.title("🥭 Agro Centro 👨‍🌾")
+    st.write("Granjas Integrales Autosuficientes")  
   
 
 st.header("Configuración")
